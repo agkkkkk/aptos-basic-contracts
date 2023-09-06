@@ -1,0 +1,18 @@
+[package]
+name = "transfer-aptos-coin"
+version = "1.0.0"
+authors = []
+upgrade_policy= "compatible"
+
+[addresses]
+native_token_transfer="_"
+
+[dev-addresses]
+native_token_transfer="3b8c18f50a1ef3c7c2b382b7e49aa5e85a8b54bbfb933cea3a55c1857076f665"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
