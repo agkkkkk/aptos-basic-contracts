@@ -1,0 +1,18 @@
+[package]
+name = "voting-system"
+version = "1.0.0"
+authors = []
+upgrade_policy= "compatible"
+
+[addresses]
+voting_addr = "_"
+
+[dev-addresses]
+voting_addr = "e83b1baece0ace4d37eeabfd6a3c3ee18d8d21953b5cfce4049acf5fa8fc4e8f"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
