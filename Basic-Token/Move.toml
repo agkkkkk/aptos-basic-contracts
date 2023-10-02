@@ -1,0 +1,17 @@
+[package]
+name = "basic-token"
+version = "1.0.0"
+authors = []
+
+[addresses]
+token_addr = "_"
+
+[dev-addresses]
+token_addr = "0f905c579e03e2b66a30bece5bb1c4ec1184cd7121e736efa2daab3702d1d5b7"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
