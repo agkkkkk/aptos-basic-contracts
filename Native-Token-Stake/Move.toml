@@ -1,0 +1,18 @@
+[package]
+name = "native-token-stake"
+version = "1.0.0"
+authors = []
+upgrade_policy = "compatible"
+
+[addresses]
+stake_addr="_"
+
+[dev-addresses]
+stake_addr = "e184ec4ed9a4483a7815b5a45a88d0d99308a343d1008f0c4fc8898b6d990a0f"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
