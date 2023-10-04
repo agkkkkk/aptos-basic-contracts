@@ -85,14 +85,6 @@ module stake_addr::Stake {
     }
 
     #[view]
-    public fun get_addr(): address acquires StakedAmount {
-        let staked_amount = borrow_global_mut<StakedAmount>(@stake_addr);
-
-        let resource_signer_addr = account::create_signer_with_capability(&staked_amount.signer_cap);
-        signer::address_of(&resource_signer_addr)
-    }
-
-    #[view]
     public fun get_stake_amount_for_address(addr: address): u64 acquires StakedAmount {
         let staked_amount = borrow_global<StakedAmount>(@stake_addr);
         let amount = table::borrow(&staked_amount.stake, addr);
