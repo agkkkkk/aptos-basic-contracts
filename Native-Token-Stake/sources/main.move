@@ -40,7 +40,7 @@ module stake_addr::Stake {
         coin::transfer<AptosCoin>(account, signer::address_of(&resource_signer_addr), amount);
 
         staked_amount.total_staked_amount = staked_amount.total_staked_amount + amount;
-        vector::push_back(&mut staked_amount.staked_users, signer_addr);
+        
         
         let already_staked = table::contains(&staked_amount.stake, signer_addr);
 
@@ -50,6 +50,7 @@ module stake_addr::Stake {
             table::upsert(&mut staked_amount.stake, signer_addr, new_staked_amount);
         } else {
             table::add(&mut staked_amount.stake, signer_addr, amount);
+            vector::push_back(&mut staked_amount.staked_users, signer_addr);
         }
     }
 
