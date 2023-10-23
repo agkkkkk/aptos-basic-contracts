@@ -1,0 +1,22 @@
+[package]
+name = "nft"
+version = "1.0.0"
+authors = []
+
+[addresses]
+nft="_"
+
+[dev-addresses]
+nft="f7b605af509093647e5f2d104f3c87c997dac7b02e5ec68b3de21391f3f2be68"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dependencies.AptosToken]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-token"
+
+[dev-dependencies]
