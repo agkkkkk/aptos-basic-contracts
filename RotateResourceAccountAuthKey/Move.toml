@@ -1,0 +1,17 @@
+[package]
+name = "rotate-resource-account-auth-key"
+version = "1.0.0"
+authors = []
+
+[addresses]
+addr="_"
+
+[dev-addresses]
+addr="9188b842218c9f9696e8967b3747c906bb808d0364e3b33282ce752eaaca84bd"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
