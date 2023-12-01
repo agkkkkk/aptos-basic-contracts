@@ -1,0 +1,19 @@
+[package]
+name = "multisend"
+version = "1.0.0"
+authors = []
+
+[addresses]
+multisend="_"
+owner="_"
+
+[dev-addresses]
+multisend="c2c812284f8b893e0188b264080d630e96c1a24f22daf4d8730ffbe4b950108e"
+owner="85d044a5871b27208ea39ee519fc7393dbfd07bbcafa46e1bbde2ee5f290de23"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]
