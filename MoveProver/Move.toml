@@ -7,7 +7,7 @@ authors = []
 test="_"
 
 [dev-addresses]
-test="0x1234"
+test="ff4d99d8994045359736c89f8a5e34f0c01a098913f32829767c6d9954fa135f"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"
