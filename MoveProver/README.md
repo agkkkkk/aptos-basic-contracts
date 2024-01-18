@@ -8,6 +8,7 @@ MSL or Move Specification Language is a subset of move that supports specificati
 
 - [MoveProverGuide](https://aptos.dev/move/prover/prover-guide)
 - [MoveSpecificationLang](https://aptos.dev/move/prover/spec-lang)
+- [MoveProverReference](https://github.com/Zellic/move-prover-examples)
 
 ### Prerequisites
 
